@@ -1,20 +1,49 @@
 body {
-    font-family: brandon-grotesque, sans-serif;
+    font-family: "Bai Jamjuree", serif;
+    font-weight: 400;
     font-style: normal;
-    font-weight: 100;
     padding: 0;
     margin: 0;
+    background-color: wheat;
 }
 html {
     padding: 0;
     margin: 0;
 }
 
-header{
-    margin: 0;
-    padding: 0;
-}
 .container {
-    background-color: gray;
-    width: 100%;
+    background-color: wheat;
+    margin: 0px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.title {whiteontent;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 700;
+    font-size: 17pt;
+    color: black;
+}
+
+.buttons {
+    max-width: fit-content;
+}
+.btn {
+    color: black;
+}
+
+
+.social-medias {
+    max-width: fit-content;
+    max-height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.social-media {
+    width: 25px;
+    margin: 7px;
 }
