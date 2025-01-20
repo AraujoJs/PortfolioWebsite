@@ -1,49 +1,140 @@
-body {
+/* Global Styles */
+body, html {
     font-family: "Bai Jamjuree", serif;
     font-weight: 400;
     font-style: normal;
+    margin: 30px;
     padding: 0;
-    margin: 0;
-    background-color: wheat;
+    padding-top: 70px;
+    background-color: #fff;
 }
-html {
-    padding: 0;
-    margin: 0;
+a {
+    text-decoration: none;
 }
 
+/* Navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#navbar.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+
+/* Container */
 .container {
-    background-color: wheat;
-    margin: 0px;
-    max-width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    padding: 15px;
+    max-width: 100%;
+    width: 100%;
     text-align: center;
+    background-color: #fff;
 }
 
-.title {whiteontent;
-    margin-top: auto;
-    margin-bottom: auto;
-    font-weight: 700;
-    font-size: 17pt;
+/* Title */
+.title {
+    width: 30%;
+    font-weight: 500;
+    font-size: 1.6em;
+    margin-left: auto;
+    margin-right: auto;
     color: black;
 }
 
+/* Buttons */
 .buttons {
-    max-width: fit-content;
+    max-width: 30%;
 }
 .btn {
     color: black;
+    font-size: 16px;
+    text-decoration: none; /* Remove underline */
 }
 
-
+/* Social Media */
 .social-medias {
-    max-width: fit-content;
-    max-height: fit-content;
-    margin-top: auto;
-    margin-bottom: auto;
+    width: 30%;
+    padding-right: 50px;
+    text-align: end;
+}
+.footer-social-medias {
+    width: 30%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .social-media {
     width: 25px;
     margin: 7px;
+}
+
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+    margin: 0;
+    margin-left: auto;
+    max-width: 1200px;
+}
+
+.left-section {
+    width: 45%;
+    padding-right: 20px;
+}
+
+.right-section {
+    width: 55%;
+    padding-left: 20px;
+    text-align: start;
+}
+.mail-sign {
+    font-weight: 700;
+    font-size: larger;
+    margin-top: 60px;
+}
+
+.photo-accueil {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.footer-btn {
+    margin: 30px;
+}
+
+.footer-title {
+    margin-top: 100px;
+}
+
+.footer {
+    text-align: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.footer-credits {
+    margin: 30px;
+}
+
+.btn-link {
+    text-decoration: underline;
+    color: black;
+    margin: 5px;
+}
+
+.photo-galery {
+    width: 100%;
+    margin: right 0;;
 }
