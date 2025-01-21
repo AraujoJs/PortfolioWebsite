@@ -27,6 +27,46 @@ a {
     opacity: 0;
 }
 
+@media screen and (max-width: 1145px) {
+    .nav-title {
+        display: none;
+    }
+
+    .btn {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    #navbar .buttons {
+        width: 50%;
+        text-align: end;
+    }
+    #navbar .social-medias {
+        text-align: start;
+    }
+    
+    .intro {
+        flex-direction: column;
+    }
+    .intro .left-section {
+        width: 100%;
+    }
+
+    .intro .right-section {
+        width: 100%;
+        padding-left: 0%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #navbar .buttons {
+        width: 100%;
+        text-align: center;
+    }
+    #navbar .social-medias {
+        display: none;
+    }
+}
+
 
 /* Container */
 .container {
@@ -71,6 +111,12 @@ a {
     margin: 5px;
 }
 
+.btn-link {
+    text-decoration: underline;
+    color: black;
+    margin: 5px;
+}
+
 /* Social Media */
 .social-medias {
     width: 30%;
@@ -95,6 +141,9 @@ a {
     justify-content: space-between;
     align-items: flex-start;
     padding-top: 20px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .left-section {
@@ -108,14 +157,25 @@ a {
     text-align: start;
 }
 .mail-sign {
-    font-weight: 700;
+    font-weight: 500;
     font-size: larger;
     margin-top: 60px;
+
 }
 
+.green-text {
+    color: #A4C639;
+}
 .photo-accueil {
     margin-top: 50px;
     width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.photos-accueil-container {
+    text-align: center;
 }
 
 .footer-btn {
@@ -133,16 +193,41 @@ a {
 }
 
 .footer-credits {
-    margin: 30px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+
+    
 }
 
-.btn-link {
-    text-decoration: underline;
-    color: black;
-    margin: 5px;
+#my-photo:hover {
+    content: url(../data/img/a-propos/image05.jpeg);
 }
+
+
+#my-photo:active {
+    content: url(../data/img/a-propos/image06.jpeg);
+}
+
+
+
 
 .photo-galery {
     width: 100%;
     margin: right 0;;
+}
+
+.logo-footer {
+    height: 2em;
+    width: 2em;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.logo-footer-link {
+    height: 2em;
+    width: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
 }
