@@ -52,12 +52,23 @@ a {
 
 /* Buttons */
 .buttons {
-    max-width: 30%;
+    width: 30%;
 }
 .btn {
     color: black;
-    font-size: 16px;
+    font-size: 15px;
     text-decoration: none; /* Remove underline */
+    margin: 5px;
+}
+.btn:hover {
+    color: orange;
+}
+
+.btn-selected {
+    color: orange;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 5px;
 }
 
 /* Social Media */
@@ -84,18 +95,15 @@ a {
     justify-content: space-between;
     align-items: flex-start;
     padding-top: 20px;
-    margin: 0;
-    margin-left: auto;
-    max-width: 1200px;
 }
 
 .left-section {
-    width: 45%;
+    width: 50%;
     padding-right: 20px;
 }
 
 .right-section {
-    width: 55%;
+    width: 50%;
     padding-left: 20px;
     text-align: start;
 }
