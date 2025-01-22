@@ -44,6 +44,7 @@ a {
         text-align: start;
     }
     
+
     #photo-container {
         text-align: center;
     }
@@ -79,6 +80,9 @@ a {
     }
 }
 
+#photo-container {
+    text-align: center;
+}
 
 /* Container */
 .container {
@@ -217,6 +221,7 @@ a {
 
 #my-photo {
     margin:20 px;
+    margin-top: 30px;
 }
 
 #my-photo:hover {
