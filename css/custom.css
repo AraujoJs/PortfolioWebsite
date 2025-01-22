@@ -44,6 +44,18 @@ a {
         text-align: start;
     }
     
+    #photo-container {
+        text-align: center;
+    }
+
+    .title mark{
+        font-size: 0.7em;
+    }
+
+    .title {
+        text-align: center;
+    }
+
     .intro {
         flex-direction: column;
     }
@@ -89,6 +101,8 @@ a {
     margin-right: auto;
     color: black;
 }
+
+
 
 /* Buttons */
 .buttons {
@@ -198,6 +212,11 @@ a {
     flex-direction: column;
 
     
+}
+
+
+#my-photo {
+    margin:20 px;
 }
 
 #my-photo:hover {
