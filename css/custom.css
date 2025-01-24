@@ -157,7 +157,7 @@ a {
 .intro {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: start;
     padding-top: 20px;
     max-width: 1200px;
     margin-right: auto;
@@ -254,4 +254,16 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
+}
+
+#a-propos-zoom {
+    margin-top: 100px;
+}
+
+#my-photo-theatro {
+    margin-top: 20px;
+}
+
+#my-photo-theatro:hover {
+    content: url(/data/img/a-propos/image07.jpeg);
 }
