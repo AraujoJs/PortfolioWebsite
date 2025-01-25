@@ -225,12 +225,12 @@ a {
 }
 
 #my-photo:hover {
-    content: url(../data/img/a-propos/image05.jpeg);
+    content: url(../data/img/a-propos/image05.webp);
 }
 
 
 #my-photo:active {
-    content: url(../data/img/a-propos/image06.jpeg);
+    content: url(../data/img/a-propos/image06.webp);
 }
 
 
@@ -263,17 +263,17 @@ a {
     grid-auto-rows: 240px;
   }
   
-  .card {
+.card {
     display: flex;
     justify-content: center;
     align-items: center;
     background: #353535 url("https://picsum.photos/id/564/1200/800") center /
-      cover no-repeat;
+        cover no-repeat;
     font-size: 3rem;
     color: #fff;
     box-shadow:
-      rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
-      rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+        rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+        rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
     height: 100%;
     width: 100%;
     border-radius: 4px;
@@ -281,15 +281,15 @@ a {
     overflow: hidden;
     padding: 0;
     margin: 0;
-  }
-  
-  .card-tall {
+}
+
+.card-tall {
     grid-row: span 2 / auto;
-  }
-  
-  .card-wide {
+}
+
+.card-wide {
     grid-column: span 2 / auto;
-  }
+}
   
   @media screen and (max-width: 599px) {
     .card-tall,
