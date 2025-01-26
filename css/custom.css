@@ -8,8 +8,42 @@ body, html {
     padding-top: 70px;
     background-color: #fff;
 }
+
+h3 {
+    margin-bottom: 0;
+}
 a {
     text-decoration: none;
+    
+}
+
+.project-image-container {
+    text-align: center;
+    width: 100%;
+}
+
+.project-image {
+    width: 150px;
+    margin: 20px;
+}
+
+.link-under {
+    color: black;
+    text-decoration: underline;
+}
+
+ol>li {
+    margin-top: 10px;
+}
+
+
+.block-code {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.space-top {
+    margin-top: 80px;
 }
 
 /* Navbar */
@@ -104,6 +138,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     color: black;
+    text-align: center;
 }
 
 
@@ -156,6 +191,17 @@ a {
 
 .intro {
     display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 20px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.intro-vertical {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: start;
     padding-top: 20px;
@@ -233,9 +279,28 @@ a {
     content: url(../data/img/a-propos/image06.webp);
 }
 
+#button-see-more {
+    background-color: #353535;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    margin-top: 70px;
+    border-radius: 10px;
 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
-
+#button-see-more a{
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#button-see-more img{
+    width: 28px;
+    height: 28px;
+}
 .photo-galery {
     width: 100%;
     margin: right 0;;
@@ -298,3 +363,36 @@ a {
       grid-column: span 1 / auto;
     }
 }
+
+
+.books-container {
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+.book-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.book-image {
+    width: 100px;
+    padding: 50px;
+}
+
+.book-text {
+
+}
+
+.book-quote {
+    font-style: italic;
+    margin-left: 100px;
+}
+
+.book-title {
+    font-size: larger;
+}
+
+
