@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,13 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&family=Smooch+Sans:wght@100..900&display=swap"
+        rel="stylesheet">
 
 
 </head>
+
 <body>
     <div id="navbar" class="container">
         <!-- Navigation Buttons -->
@@ -24,10 +28,11 @@
             <a class="btn-selected" href="#">SAE-105</a>
             <a class="btn" href="../../galerie/galerie.html">Galerie</a>
         </div>
-        
+
         <!-- Title -->
-        <div class="title nav-title">José Araújo<img src="../../data/img/android-4.svg" alt="logo d'Android" width="45"> </div>
-        
+        <div class="title nav-title">José Araújo<img src="../../data/img/android-4.svg" alt="logo d'Android" width="45">
+        </div>
+
         <!-- Social Media Links -->
         <div class="social-medias">
             <a href="https://github.com/araujojs" target="_blank">
@@ -41,16 +46,157 @@
             </a>
         </div>
     </div>
-    <h1>Ma SAE105</h1>
 
+    <div class="intro">
+        <div class="left-section">
+            <h1>Qu'est-ce qu'une SAÉ ?</h1>
+        </div>
+
+        <div class="right-section">
+
+            <p>
+                Une <strong>SAÉ</strong> (<em>Situation d'Apprentissage et d'Évaluation</em>) est un projet pédagogique conçu pour <mark>simuler une
+                situation professionnelle réaliste</mark>. En première année de BUT Réseaux et Télécommunications à l'<a class="link-under" href="https://iut1.univ-grenoble-alpes.fr/departements-d-enseignement/reseaux-et-telecommunications-rt--1703.kjsp" target="_blank">IUT1 de
+                Grenoble</a>, nous avons réalisé, au premier semestre, un total de <strong>6 SAÉs</strong>. Chaque SAÉ nous a permis
+                d'approfondir une ou plusieurs compétences clés liées à notre formation.
+            </p>
+
+            <p>
+                Parmi ces projets, la <strong>SAÉ105 - Traitement de données</strong>, développée par les enseignants <em>Cléo Baras</em>,
+                <em>Rémy Chollet</em>, <em>Lorraine Goeuriot</em> et <em>Jérôme Martin</em>, a été celle qui m'a le plus marqué. Ce projet m'a
+                permis de me plonger dans une situation proche du monde professionnel, tout en renforçant mes
+                compétences en <strong>Python</strong> et en <strong>shell scripting</strong>. Je tiens à remercier ces enseignants pour leur
+                soutien et l'excellente conception de ce projet.
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="intro">
+        <div class="left-section">
+            <h1>SAÉ115 - Gestion et traitement des données</h1>
+        </div>
+
+        <div class="right-section">
+            <p>
+                La <strong>SAÉ115</strong> portait sur <mark>l'exploitation et le traitement des données des emplois du temps (ADE)</mark> des
+                personnels de l'IUT. Le but principal était de produire des rapports clairs et précis destinés aux
+                différents acteurs universitaires : services administratifs, financiers, enseignants, étudiants, etc.
+                L'objectif global visait à <strong>automatiser les tâches répétitives</strong>, comme la création mensuelle de
+                bilans, afin de faciliter le travail des collaborateurs.
+            </p>
+        </div>
+    </div>
+
+    <div class="intro-vertical">
+
+        <h1 class="title space-top"><mark>Compétences développées</mark></h1>
+
+        <ol>
+            <li>
+                <strong>Programmation Python:</strong> utilisation pour le traitement des données, avec des fonctions
+                dédiées à la manipulation des horaires, telles que :
+                <ul>
+                    <li>Comparaison d'heures et de minutes.</li>
+                    <li>Calcul de la durée entre deux horaires.</li>
+                    <li>Conversion des minutes en heures.</li>
+                </ul>
+            </li>
+            <li><strong>Gestion de projet et respect des délais:</strong> nous avons appris à planifier nos tâches
+                efficacement pour répondre aux échéances imposées.</li>
+            <li><strong>Utilisation de GIT et documentation:</strong> nous avons utilisé GIT pour versionner notre
+                projet
+                tout en rédigeant une documentation complète, indispensable pour maintenir la lisibilité du projet à
+                mesure
+                qu'il devenait plus complexe.</li>
+        </ol>
+
+
+        <h1 class="title space-top"><mark>Ça ressemblait à quoi?</mark></h1>
+
+        <p>Pour illustrer mon travail dans cette SAÉ, analysons deux exemples de code que j’ai développés. Ces exemples
+            montrent comment j’ai automatisé le traitement des données d’emploi du temps en extrayant des informations
+            spécifiques d’un fichier CSV.
+        </p>
+
+        <h2><code>recupere_champ_csv()</code></h2>
+
+        <p>Cette fonction a pour objectif de récupérer un champ spécifique d’un événement décrit au format CSV. Les
+            événements suivent une structure fixe sous forme de chaîne de caractères, par exemple :</p>
+
+        <img class="block-code" src="data/img/code-01.webp">
+
+        <h3>Code:</h3>
+        <img class="block-code" src="data/img/code-02.webp">
+
+        <h3>Détails de fonctionnement:</h3>
+
+        <ol>
+            <li><strong>Vérification de la validité du champ demandé :</strong> La première étape consiste à vérifier si
+                le champ saisi est valide. La liste des champs autorisés est définie dans une
+                variable <code>champs</code>. Si le champ saisi n’est pas dans cette liste, la fonction
+                renvoie <code>None</code>.</li>
+
+            <li><strong>Découpage des données avec le séparateur <code>;</code> :</strong> Les événements étant des
+                chaînes de caractères structurées, un <code>split(";")</code> est utilisé pour transformer la chaîne en une liste.
+                Chaque élément de cette liste correspond à un champ.</li>
+
+            <li>
+                <strong>Traitement spécifique pour les champs <code>debut</code> et <code>fin</code> :</strong> Les heures de début et de fin étant regroupées dans un même champ sous la forme <code>debut|fin</code>, un traitement particulier est nécessaire :
+                <ul>
+                    <li>Le champ est identifié par sa position dans la liste (<code>debut-fin</code>).</li>
+                    <li>Un second découpage est réalisé avec le séparateur <code>|</code> pour isoler les heures de début et de fin.</li>
+                    <li>En fonction du champ demandé (<code>debut</code> ou <code>fin</code>), la fonction retourne la valeur correspondante.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Retour des autres champs :</strong> Pour tous les autres champs (comme <code>modules</code>, <code>modalite</code>, <code>theme</code>, etc.), la fonction récupère directement la valeur grâce à l’index correspondant dans la liste.
+            </li>
+        </ol>
+
+        <h2>Génération de tableaux Markdown</h2>
+        <p>Un autre exemple intéressant est la création d’un tableau au format Markdown à partir de données structurées.</p>
+
+        <h3>Données d'entrée :</h3>
+        <img class="block-code" src="data/img/code-03.webp">
+        <h3>Tableau attendu :</h3>
+        <img class="block-code" src="data/img/code-04.webp">
+        <h3>Code Python :</h3>
+        <img class="block-code" src="data/img/code-05.webp">
+
+        <h3>Détails de fonctionnement :</h3>
+        <ol>
+            <li>
+                <strong>Initialisation :</strong> 
+                <ul>
+                    <li>La fonction commence par définir une chaîne vide <code>tableau</code> pour stocker le résultat final.</li>
+                    <li>Des variables comme <code>n_colonne</code> (nombre de colonnes) et <code>space_colonne</code> (largeur des colonnes) sont calculées pour faciliter la mise en forme.</li>
+                </ul>
+            
+            </li>
+
+            <li><strong>Création de la ligne d’en-têtes :</strong> Une boucle parcourt les en-têtes, ajoutant chaque titre centré à une ligne. Un séparateur <code>|</code> est ajouté entre chaque colonne.</li>
+
+            <li><strong>Ajout de la ligne de séparation :</strong> Une seconde ligne est créée avec des tirets (<code>-</code>) pour séparer les en-têtes des données.</li>
+
+            <li><strong>Ajout des données :</strong> Chaque ligne de données est formatée de manière similaire aux en-têtes. Les valeurs sont centrées dans les colonnes en respectant leur largeur.</li>
+        </ol> 
+
+        <p>Ces deux fonctions montrent l’importance de la planification et de la décomposition des tâches complexes en sous-problèmes. Elles reflètent également la rigueur requise pour des projets professionnels, où l’automatisation et la clarté sont essentielles.</p>
+        <p>En conclusion, ces projets SAÉ nous ont permis de développer des compétences pratiques en programmation, gestion de projet et collaboration. Ils nous ont également préparés aux défis du monde professionnel en nous plongeant dans des situations réalistes et formatrices.</p>
+
+    </div>
+    </div>
     <!-- Mon footer (c'est ici chef!)-->
     <div class="footer">
         <div class="title footer-title">José Araújo</div>
         <div class="footer-btn">
-            <a class="btn-link" href="../index.html">Accueil</a>
-            <a class="btn-link" href="../projets/projets.html">Projets</a>
-            <a class="btn-link" href="../saes/sae105/sae105.html">SAE-105</a>
-            <a class="btn-link" href="../galerie/galerie.html">Galerie</a>
+            <a class="btn-link" href="../../index.html">Accueil</a>
+            <a class="btn-link" href="../../cv/a-propos.html">À propos</a>
+            <a class="btn-link" href="../../projets/projets.html">Projets</a>
+            <a class="btn-link" href="../../galerie/galerie.html">Galerie</a>
         </div>
         <div class="footer-social-medias">
             <a href="https://github.com/araujojs" target="_blank">
@@ -63,16 +209,17 @@
                 <img class="social-media" alt="YouTube" src="../../data/img/youtube-icon.svg">
             </a>
         </div>
-        
+
         <div class="footer-credits">
             <a class="logo-footer-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
                 <img class="logo-footer" src="../../data/img/jojo-icon.ico" alt="jojo logo">
             </a>
             <small>Fait par Jojo!</small>
         </div>
-    <!-- ça finit la chef !-->
-    </div>
-    <!-- faut pas prendre la tete pour ce js, c'est que pour cacher la navbar ;( -->
-    <script src="../../js/script.js"></script>
+        <!-- ça finit la chef !-->
+
+        <!-- faut pas prendre la tete pour ce js, c'est que pour cacher la navbar ;( -->
+        <script src="../../js/script.js"></script>
 </body>
+
 </html>
