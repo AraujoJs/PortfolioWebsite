@@ -8,7 +8,10 @@ body, html {
     padding-top: 70px;
     background-color: #fff;
 }
-
+p {
+    text-align: justify;
+    text-indent: 2em;
+}
 h3 {
     margin-bottom: 0;
 }
@@ -225,6 +228,14 @@ ol>li {
     font-size: larger;
     margin-top: 60px;
 
+}
+
+.margin-top-title {
+    margin-top: 100px;
+}
+
+.photo-left-margin-top {
+    margin-top: 20px;
 }
 
 .green-text {
