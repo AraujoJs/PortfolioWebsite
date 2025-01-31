@@ -1,0 +1,11 @@
+.photo-accueil {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.photos-accueil-container {
+    text-align: center;
+}

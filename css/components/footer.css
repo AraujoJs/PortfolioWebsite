@@ -1,0 +1,41 @@
+.footer-btn {
+    margin: 30px;
+}
+
+.footer-title {
+    margin-top: 100px;
+}
+
+.footer {
+    text-align: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.footer-credits {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-footer {
+    height: 2em;
+    width: 2em;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.logo-footer-link {
+    height: 2em;
+    width: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 720px) {
+    .footer-social-medias {
+        display: block;
+        width: 100%;
+    }
+}

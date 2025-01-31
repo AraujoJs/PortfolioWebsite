@@ -1,0 +1,46 @@
+
+#my-photo {
+    margin:20 px;
+    margin-top: 30px;
+}
+
+#my-photo:hover {
+    content: url(../../data/img/a-propos/image05.webp);
+}
+
+
+#my-photo:active {
+    content: url(../../data/img/a-propos/image06.webp);
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 1145px) {
+    .photo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+
+
+    #my-photo {
+        max-width: 90%;
+    }
+
+    #my-photo-theatro {
+        max-width: 90%;
+    }
+
+    #photo-prata {
+        max-width: 90%;
+    }
+}

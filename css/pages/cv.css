@@ -1,0 +1,172 @@
+#button-telecharger-cv {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+#button-telecharger {
+    background-color: #A4C639;
+    color: white;
+    padding: 5px;
+    width: 10vw;
+    font-size: 1.3vw;
+    border-radius: 10px;
+}
+
+.cv-conteiner-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 20px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    position: relative;
+    padding: 30px;
+}
+
+.cv-contacts-conteiner {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #A4C639;
+    display: flex;
+    justify-content: space-between;
+}
+
+.liste-item-conteiner {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cv-titre-conteiner {
+    align-items: center;
+    display: flex;
+    height: 2.5em;
+    width: 100%;
+}
+
+.top-cv {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-cv {
+    border-radius: 50%;
+    width: 15%;
+}
+
+.cv-address-text {
+    font-weight: 300;
+    text-indent: 0;
+    margin: 0;
+}
+
+.cv-contact-icon {
+    width: 5%;
+}
+
+#cv-button-subtitle {
+    color: black;
+    font-size: 0.8vw;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.cv-responsive-image {
+    width: 100%;
+    height: auto;
+}
+
+.cv-responsive-text {
+    font-size: 0.9vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+.cv-text-content {
+    text-indent: 0;
+    margin-top: 5px;
+    font-size: 0.9vw;
+    text-overflow: ellipsis;
+}
+
+#cv-titre-1 {
+    width: 100%;
+
+}
+
+.cv-titre-content {
+    display: inline;
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+
+.cv-liste-item {
+    font-size: 0.9vw;
+    text-overflow: ellipsis;
+    list-style-type: disc;
+}
+
+
+
+
+
+.cv-titre-content-2 {
+    display: inline;
+    font-weight: 450;
+    font-size: 1vw;
+    margin-top: 0;
+}
+
+.cv-line {
+    width: 100%;
+    background-color: #A4C639;
+    height: 0.1em;
+}
+
+.line-conteine {
+    width: 100%;
+    height: 100%;
+}
+
+.cv-liste-text {
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 25px;
+}
+
+
+
+.titre-principal {
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.5vw;
+    margin-bottom: 0;
+    margin-top: 0;
+    letter-spacing: 0.05em;
+}
+
+.subtitle-principal {
+    text-indent: 0;
+    margin-top: 0;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1vw;
+    letter-spacing: 0.05em;
+}
+
+.title-conteiner {
+    display: flex;
+    flex-direction: column;
+}

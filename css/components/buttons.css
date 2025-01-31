@@ -1,0 +1,61 @@
+.buttons {
+    width: 45%;
+}
+.btn {
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 5px;
+}
+.btn:hover {
+    color: #A4C639;
+}
+
+.btn-selected {
+    color: #A4C639;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.btn-link {
+    text-decoration: underline;
+    color: black;
+    margin: 5px;
+}
+
+.btn-link-no-under {
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+
+#button-see-more {
+    background-color: #353535;
+    width: fit-content;
+    color: white;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#button-see-more a{
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#button-see-more img{
+    width: 28px;
+    height: 28px;
+}
+
+#button-see-more-link {
+    margin-top: 50px;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
