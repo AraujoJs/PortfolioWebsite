@@ -3,9 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>José Araújo - CV</title>
+
+        <!-- Style CSS -->
+    <link rel="stylesheet" href="../css/custom.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&family=Smooch+Sans:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../data/img/jojo-icon.ico" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/39ef9be472.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Mon CV</h1>
+    <div id="navbar" class="container">
+        <!-- Navigation Buttons -->
+        <div class="buttons">
+            <a class="btn" href="../index.html">Accueil</a>
+            <a class="btn" href="../cv/a-propos.html">À propos</a>
+            <a class="btn" href="../projets/projets.html">Projets</a>
+            <a class="btn" href="../saes/sae105/sae105.html">SAE-105</a>
+            <a class="btn-selected" href="#">CV</a>
+            <a class="btn" href="../galerie/galerie.html">Galerie</a>
+        </div>
+        <!-- Title -->
+        <div class="title nav-title"><a class="btn-link-no-under" href="../index.html"><span>José Araújo</span><i class="fa-brands fa-android green-text btn-link-no-under"></i></a></div>
+
+        <!-- Social Media Links -->
+        <div class="social-medias">
+            <a href="https://github.com/araujojs" target="_blank">
+                <i class="fa-brands fa-github-alt fa-xl social-media"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/araujojose/" target="_blank">
+                <i class="fa-brands fa-linkedin-in fa-xl social-media"></i>
+            </a>
+            <a href="https://www.youtube.com/@joseAraujoDev" target="_blank">
+                <i class="fa-brands fa-youtube fa-xl social-media"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="cv-intro-vertical">
+       
+        <a id="button-telecharger-cv" href="../data/download/cv-araujo-jose.pdf" download="cv-araujo-jose-2025.pdf">
+            <div id="button-telecharger" class="title-light">
+                <span>telecharger <i class="fa-solid fa-file-pdf"></i></span>
+            </div>
+        </a>
+
+
+
+        <div class="top-cv">
+            <div class="title-conteiner">
+                <h1 class="titre-principal">José <span class="green-text">ARAUJO</span></h1>
+                <p class="subtitle-principal">recherche d’Alternance en <span class="green-text">réseaux</span> et <span class="green-text">télécommunications</span> <br>et Développeur <span class="green-text">Android Kotlin</span></p>
+            </div>
+            <img class="img-cv" src="../data/img/cv/araujo-jose.webp" width="150px">
+        </div>
+        
+
+        
+        
+        <p class="cv-address-text cv-responsive-text">38410, Grenoble, France</p>
+        <div class="cv-contacts-conteiner">
+            <span class="cv-contact-text cv-responsive-text"><i class="fa-solid fa-envelope fa-lg"></i> <a class="link-under" href="mailto:araujoo.java@gmail.com?subject=Proposition%20d%27opportunité%20professionnelle">araujoo.java@gmail.com</a></span>
+            <span class="cv-contact-text cv-responsive-text"><i class="fa-solid fa-phone fa-lg"></i> <a class="link-under" href="tel:+330667193414">+33 06 67 19 34 14</a></span>
+            <span class="cv-contact-text cv-responsive-text"><i class="fa-brands fa-linkedin-in fa-lg"></i> <a class="link-under" href="https://www.linkedin.com/in/araujojose/">https://www.linkedin.com/in/araujojose/</a></span>
+        </div>
+
+        <p class="cv-text-content">Je suis <strong>développeur Android</strong> et étudiant en R&T. Expertise en <strong>Kotlin</strong> et <strong>Jetpack Compose</strong> pour des interfaces
+            modernes et performantes. J’ai des compétences complémentaires en développement <strong>backend</strong> ainsi qu’une
+            maîtrise de <strong>Java</strong>.
+        </p>
+        
+        <div class="cv-titre-conteiner">
+            <h2 id="cv-titre-1" class="cv-titre-content">Compétences Techniques</h2>
+            <img src="../data/img/cv/line-photo.png" width="70%">
+            </div>
+            
+        
+        <ul class="cv-liste-text">
+            <li class="cv-liste-item">Développement d'applications Android natives avec Kotlin et Jetpack Compose</li>
+            <li class="cv-liste-item">Architectures MVVM et MVP</li>
+            <li class="cv-liste-item">Intégration d’API et services web</li>
+            <li class="cv-liste-item">Gestion de base de données locale (Shared Preferences et SQLite)</li>
+            <li class="cv-liste-item">Utilisation de Git</li>
+            <li class="cv-liste-item">Virtualization et analyse de réseaux</li>
+            <li class="cv-liste-item">IIntégration de solutions de sécurité (Firewall, TLS/SSL)</li>
+        </ul>
+        <div class="cv-titre-conteiner">
+            <h2 id="cv-titre-1" class="cv-titre-content">Experience</h2>
+            <img src="../data/img/cv/line-photo.png" width="85%">
+            </div>
+
+
+        <h3 class="cv-titre-content-2">Développeur mobile freelance</h3>
+        <ul class="liste-item-conteiner">
+            <li class="cv-liste-item">InstaClone : Un clone d'Instagram. Implementé l'authentification des utilisateurs, l'affichage du flux, le
+                partage de photos et les publications.</li>
+            <li class="cv-liste-item">NetflixClone : Développé un clone de Netflix. Employé Jetpack Compose, RecyclerView,
+                SharedPreferences.</li>
+            <li class="cv-liste-item">Pokedex App : Développé une application complète de Pokedex avec de la récupération et du traitement
+                des données. Intégré une API publique Pokémon.</li>
+            <li class="cv-liste-item">Chuck Norris Jokes App : Intégré l'API Chuck Norris pour récupérer et afficher une nouvelle blague à
+                chaque interaction de l'utilisateur.</li>
+            <li class="cv-liste-item">FitnessTracker : Développé une application de suivi de la forme physique pour surveiller l'activité et les
+                progrès des utilisateurs.</li>
+        </ul>
+
+        <div class="cv-titre-conteiner">
+            <h2 id="cv-titre-1" class="cv-titre-content">Formation</h2>
+            <img src="../data/img/cv/line-photo.png" width="85%">
+            </div>
+
+        <h3 class="cv-titre-content-2">BUT Réseaux et Télécommunications</h3>
+        <p class="cv-text-content">IUT1 de Grenoble – Saint Martin d’Hères (en cours)</p>
+
+        <h3 class="cv-titre-content-2">Formation Android Express</h3>
+        <p class="cv-text-content">Tiago Aguiar</p>
+
+        <h3 class="cv-titre-content-2">Baccalauréat Général</h3>
+        <p class="cv-text-content">Spécialité Mathématiques et NSI au Lycée Portes de l'Oisans, Vizille.</p>
+        <div class="cv-titre-conteiner">
+            <h2 id="cv-titre-1" class="cv-titre-content">Langues</h2>
+            <img src="../data/img/cv/line-photo.png" width="85%">
+            </div>
+        <ul class="liste-item-conteiner">
+            <li class="cv-liste-item">Français (courant)</li>
+            <li class="cv-liste-item">Anglais (courant)</li>
+            <li class="cv-liste-item">Portugais (native)</li>
+            <li class="cv-liste-item">Espagnol (intermédiaire)</li>
+        </ul>
+
+        <div class="cv-titre-conteiner">
+            <h2 id="cv-titre-1" class="cv-titre-content">Atouts</h2>
+            <img src="../data/img/cv/line-photo.png" width="85%">
+            </div>
+        <ul class="liste-item-conteiner">
+            <li class="cv-liste-item">Communication efficace</li>
+            <li class="cv-liste-item">Curiosité et esprit d'équipe</li>
+            <li class="cv-liste-item">Résolution de problèmes complexes</li>
+            <li class="cv-liste-item">Organisation et respect des délais</li>
+        </ul>
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <div class="title footer-title">José Araújo</div>
+
+        <div class="footer-btn">
+            <a class="btn-link" href="../../index.html">Accueil</a>
+            <a class="btn-link" href="../../cv/a-propos.html">À propos</a>
+            <a class="btn-link" href="../../projets/projets.html">Projets</a>
+            <a class="btn-link" href="../saes/sae105/sae105.html">SAÉ-105</a>
+            <a class="btn-link" href="../../galerie/galerie.html">Galerie</a>
+        </div>
+
+        <div class="footer-social-medias">
+            <a href="https://github.com/araujojs" target="_blank">
+                <i class="fa-brands fa-github-alt fa-xl social-media"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/araujojose/" target="_blank">
+                <i class="fa-brands fa-linkedin-in fa-xl social-media"></i>
+            </a>
+            <a href="https://www.youtube.com/@joseAraujoDev" target="_blank">
+                <i class="fa-brands fa-youtube fa-xl social-media"></i>
+            </a>
+        </div>
+
+        <div class="footer-credits">
+            <a class="logo-footer-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <img class="logo-footer" src="../../data/img/jojo-icon.ico" alt="Logo Jojo">
+            </a>
+            <small>Fait par Jojo !</small>
+        </div>
+    </div>
+        <!-- faut pas prendre la tete pour ce js, c'est que pour cacher la navbar ;( -->
+        <script src="../js/script.js"></script>
 </body>
 </html>

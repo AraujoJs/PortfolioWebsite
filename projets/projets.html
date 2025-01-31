@@ -16,6 +16,7 @@
         rel="stylesheet">
     <link rel="icon" href="../data/img/jojo-icon.ico" type="image/x-icon">
 
+    <script src="https://kit.fontawesome.com/39ef9be472.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -26,46 +27,57 @@
             <a class="btn" href="../cv/a-propos.html">À propos</a>
             <a class="btn-selected" href="#">Projets</a>
             <a class="btn" href="../saes/sae105/sae105.html">SAE-105</a>
+            <a class="btn" href="../cv/cv.html">CV</a>
             <a class="btn" href="../galerie/galerie.html">Galerie</a>
         </div>
         <!-- Title -->
-        <div class="title nav-title">José Araújo<img src="../data/img/android-4.svg" alt="logo d'Android" width="45">
-        </div>
+        <div class="title nav-title"><a class="btn-link-no-under" href="../index.html"><span>José Araújo</span><i class="fa-brands fa-android green-text btn-link-no-under"></i></a></div>
 
         <!-- Social Media Links -->
         <div class="social-medias">
             <a href="https://github.com/araujojs" target="_blank">
-                <img class="social-media" alt="GitHub" src="../data/img/github-icon.svg">
+                <i class="fa-brands fa-github-alt fa-xl social-media"></i>
             </a>
             <a href="https://www.linkedin.com/in/araujojose/" target="_blank">
-                <img class="social-media" alt="LinkedIn" src="../data/img/linkedin-icon.svg">
+                <i class="fa-brands fa-linkedin-in fa-xl social-media"></i>
             </a>
             <a href="https://www.youtube.com/@joseAraujoDev" target="_blank">
-                <img class="social-media" alt="YouTube" src="../data/img/youtube-icon.svg">
+                <i class="fa-brands fa-youtube fa-xl social-media"></i>
             </a>
         </div>
     </div>
 
-    <h1>Mes Projets</h1>
+    <h1>Mes <span class="green-text">Projets</span>!<span><i class="fa-brands fa-github fa-l social-media"></i></span></h1>
 
 
+
+
+    
     <div class="intro-vertical">
         <h2>
-            <a class="link-under" href="https://github.com/AraujoJs/AthenasApp/blob/master/README.md" target="_blank">
-                Pokedex App
-            </a>
+            <a class="link-under red-text" href="https://github.com/AraujoJs/Pokedex"
+                target="_blank">Pokedex App <span><i class="fa-solid fa-code-merge fa-l social-media red-text"></i></span></a>
         </h2>
+        
         <p>
-            Le Pokédex est un projet d'étude permettant de pratiquer les appels API dans une application native. Il
-            utilise une API publique pour afficher une liste de Pokémon avec leurs informations détaillées. Ce projet
-            explore la gestion des données dynamiques et l'affichage structuré.
+            Le Pokédex est un projet d'étude conçu pour explorer les appels <strong>API</strong> dans une application mobile native. Il
+            utilise une API publique pour récupérer une liste de Pokémon, accompagnée de leurs informations détaillées
+            telles que les types, les capacités et les statistiques. Ce projet permet de mettre en pratique la <strong>gestion
+            des données dynamiques</strong>, en affichant des informations qui peuvent être mises à jour en temps réel.
+            L'application présente un affichage structuré avec une navigation fluide et une interface utilisateur qui
+            facilite l'accès aux données, même pour un grand nombre de Pokémon. À travers ce projet, j'ai approfondi
+            l'<strong>intégration d'API externes</strong>, le <strong>traitement des données JSON</strong> et l'<strong>affichage optimisé</strong> dans une application
+            mobile, tout en assurant une expérience utilisateur engageante et réactive.
         </p>
+
         <div><em><strong>100%</strong> du projet développé</em></div>
-        <p>
+        
+        <p class="red-text">
             <strong>#Retrofit</strong> <strong>#API</strong>
             <strong>#Json</strong> <strong>#XML</strong>
             <strong>#Picasso</strong> <strong>#AndroidSDK</strong>
         </p>
+        
         <div class="project-image-container">
             <img class="project-image" src="data/img/image-poke-01.webp" alt="Capture d'écran Pokedex App 1">
             <img class="project-image" src="data/img/image-poke-02.webp" alt="Capture d'écran Pokedex App 2">
@@ -75,17 +87,24 @@
 
     <div class="intro-vertical">
         <h2>
-            <a class="link-under" href="https://github.com/AraujoJs/AthenasApp/blob/master/README.md" target="_blank">
-                Instagram Remake App
+            <a class="link-under blue-text" href="https://github.com/AraujoJs/InstagramRemake" target="_blank">
+                Instagram Remake App <span><i class="fa-solid fa-code-merge fa-l social-media blue-text"></i></span>
             </a>
         </h2>
         <p>
-            Une réplique de l'application Instagram que j'ai développée pour explorer les fonctionnalités avancées
-            d'Android,
-            telles que la gestion des fragments, les RecyclerViews et les requêtes API avec Retrofit.
+            La réplique de l'application Instagram est un projet d'étude conçu pour explorer les fonctionnalités
+            avancées d'Android. Il permet de simuler une application de réseau social avec des éléments clés tels que
+            les <strong>profils d'utilisateurs</strong>, les <strong>publications</strong>, et les <strong>interactions
+                entre utilisateurs</strong>. Ce projet met l'accent
+            sur la gestion des <strong>fragments</strong> pour une <strong>navigation fluide</strong>, l'utilisation des
+            <strong>RecyclerViews</strong> pour afficher les
+            données de manière dynamique et performante, ainsi que l'intégration des requêtes <strong>API</strong> via
+            <strong>Retrofit</strong> pour
+            récupérer les données en temps réel. Il explore ainsi la gestion de l'interface utilisateur complexe et la
+            communication réseau dans une application mobile native.
         </p>
         <div><em><strong>100%</strong> du projet développé</em></div>
-        <p>
+        <p class="blue-text">
             <strong>#Kotlin</strong> <strong>#XML</strong>
             <strong>#Gradle</strong> <strong>#Retrofit</strong>
             <strong>#Picasso</strong> <strong>#SharedPreferences</strong>
@@ -100,16 +119,24 @@
 
     <div class="intro-vertical">
         <h2>
-            <a class="link-under" href="https://github.com/AraujoJs/AthenasApp/blob/master/README.md" target="_blank">
-                Athenas App
+            <a class="link-under yellow-text" href="https://github.com/AraujoJs/AthenasApp" target="_blank">
+                Athenas App <span><i class="fa-solid fa-code-merge fa-l social-media yellow-text"></i></span>
             </a>
         </h2>
         <p>
-            Athenas est une plateforme éducative que j'ai développée pour permettre aux élèves de partager leurs travaux
-            scolaires avec leurs pairs et de gagner des récompenses de manière anonyme.
+            Athenas est une plateforme éducative que j'ai développée pour offrir aux élèves un espace où ils peuvent
+            partager leurs travaux scolaires de manière anonyme avec leurs pairs. Les utilisateurs peuvent soumettre
+            leurs projets, recevoir des retours constructifs de leurs camarades, et accumuler des récompenses en
+            fonction de l'interaction et de la qualité de leur travail. Ce projet met en lumière la <strong>gestion des
+                données
+                utilisateur</strong>, l'implémentation des systèmes de récompense, ainsi que le développement d'une
+            <strong>interface fluide</strong>
+            et <strong>intuitive</strong>, tout en garantissant l'anonymat des utilisateurs pour encourager un partage
+            sans jugement. Il
+            explore également les aspects de sécurité et de gestion des utilisateurs dans une application éducative.
         </p>
-        <div><em><strong>70%</strong> du projet développé</em></div>
-        <p>
+        <div><em><strong>65%</strong> du projet développé</em></div>
+        <p class="yellow-text">
             <strong>#Kotlin</strong> <strong>#XML</strong>
             <strong>#Gradle</strong>
         </p>
@@ -127,19 +154,20 @@
         <div class="footer-btn">
             <a class="btn-link" href="../../index.html">Accueil</a>
             <a class="btn-link" href="../../cv/a-propos.html">À propos</a>
-            <a class="btn-link" href="../../projets/projets.html">Projets</a>
+            <a class="btn-link" href="../saes/sae105/sae105.html">SAÉ-105</a>
+            <a class="btn-link" href="../cv/cv.html">CV</a>
             <a class="btn-link" href="../../galerie/galerie.html">Galerie</a>
         </div>
 
         <div class="footer-social-medias">
             <a href="https://github.com/araujojs" target="_blank">
-                <img class="social-media" alt="GitHub" src="../../data/img/github-icon.svg">
+                <i class="fa-brands fa-github-alt fa-xl social-media"></i>
             </a>
             <a href="https://www.linkedin.com/in/araujojose/" target="_blank">
-                <img class="social-media" alt="LinkedIn" src="../../data/img/linkedin-icon.svg">
+                <i class="fa-brands fa-linkedin-in fa-xl social-media"></i>
             </a>
             <a href="https://www.youtube.com/@joseAraujoDev" target="_blank">
-                <img class="social-media" alt="YouTube" src="../../data/img/youtube-icon.svg">
+                <i class="fa-brands fa-youtube fa-xl social-media"></i>
             </a>
         </div>
 

@@ -1,3 +1,5 @@
+
+
 let lastScrollTop = 0; // Última posição do scroll
 let scrollThreshold = 20; // Limite de rolagem para esconder a navbar
 let scrollDownCount = 0; // Contador de roladas para baixo

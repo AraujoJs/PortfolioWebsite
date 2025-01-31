@@ -14,7 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&family=Smooch+Sans:wght@100..900&display=swap"
         rel="stylesheet">
-
+        <script src="https://kit.fontawesome.com/39ef9be472.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -26,37 +26,42 @@
             <a class="btn" href="../../cv/a-propos.html">À propos</a>
             <a class="btn" href="../../projets/projets.html">Projets</a>
             <a class="btn-selected" href="#">SAE-105</a>
+            <a class="btn" href="../../cv/cv.html">CV</a>
             <a class="btn" href="../../galerie/galerie.html">Galerie</a>
         </div>
 
         <!-- Title -->
-        <div class="title nav-title">José Araújo<img src="../../data/img/android-4.svg" alt="logo d'Android" width="45">
+        <div class="title nav-title">
+            <a class="btn-link-no-under" href="../../index.html"><span>José Araújo</span><i class="fa-brands fa-android green-text btn-link-no-under"></i></a>
         </div>
+
 
         <!-- Social Media Links -->
         <div class="social-medias">
             <a href="https://github.com/araujojs" target="_blank">
-                <img class="social-media" alt="GitHub" src="../../data/img/github-icon.svg">
+                <i class="fa-brands fa-github-alt fa-xl social-media"></i>
             </a>
             <a href="https://www.linkedin.com/in/araujojose/" target="_blank">
-                <img class="social-media" alt="LinkedIn" src="../../data/img/linkedin-icon.svg">
+                <i class="fa-brands fa-linkedin-in fa-xl social-media"></i>
             </a>
             <a href="https://www.youtube.com/@joseAraujoDev" target="_blank">
-                <img class="social-media" alt="YouTube" src="../../data/img/youtube-icon.svg">
+                <i class="fa-brands fa-youtube fa-xl social-media"></i>
             </a>
         </div>
     </div>
 
+
+
     <div class="intro-vertical">
     <div class="intro">
         <div class="left-section">
-            <h1>Qu'est-ce qu'une <mark>SAÉ</mark> ?</h1>
+            <h1>Qu'est-ce qu'une <span class="green-text">SAÉ</span> ?</h1>
         </div>
 
         <div class="right-section">
 
             <p>
-                Une <strong>SAÉ</strong> (<em>Situation d'Apprentissage et d'Évaluation</em>) est un projet pédagogique conçu pour <mark>simuler une
+                Une <strong>SAÉ</strong> (<em>Situation d'Apprentissage et d'Évaluation</em>) est un projet pédagogique conçu pour <mark class="green-bg">simuler une
                 situation professionnelle réaliste</mark>. En première année de BUT Réseaux et Télécommunications à l'<a class="link-under" href="https://iut1.univ-grenoble-alpes.fr/departements-d-enseignement/reseaux-et-telecommunications-rt--1703.kjsp" target="_blank">IUT1 de
                 Grenoble</a>, nous avons réalisé, au premier semestre, un total de <strong>6 SAÉs</strong>. Chaque SAÉ nous a permis
                 d'approfondir une ou plusieurs compétences clés liées à notre formation.
@@ -76,12 +81,12 @@
 
     <div class="intro">
         <div class="left-section">
-            <h1>SAÉ115 - Gestion et traitement des données</h1>
+            <h1><span class="green-text">SAÉ105</span> - Gestion et traitement des données</h1>
         </div>
 
         <div class="right-section">
             <p>
-                La <strong>SAÉ115</strong> portait sur <mark>l'exploitation et le traitement des données des emplois du temps (ADE)</mark> des
+                La <strong>SAÉ105</strong> portait sur <mark>l'exploitation et le traitement des données des emplois du temps (ADE)</mark> des
                 personnels de l'IUT. Le but principal était de produire des rapports clairs et précis destinés aux
                 différents acteurs universitaires : services administratifs, financiers, enseignants, étudiants, etc.
                 L'objectif global visait à <strong>automatiser les tâches répétitives</strong>, comme la création mensuelle de
@@ -92,11 +97,11 @@
 
     <div class="intro-vertical">
 
-        <h1 class="title space-top"><mark>Compétences développées</mark></h1>
+        <h1 class="title space-top">Compétences <span class="green-text">développées</span></h1>
 
         <ol>
             <li>
-                <strong>Programmation Python:</strong> utilisation pour le traitement des données, avec des fonctions
+                <i class="fa-brands fa-python fa-lg blue-text"></i><strong> Programmation Python:</strong> utilisation pour le traitement des données, avec des fonctions
                 dédiées à la manipulation des horaires, telles que :
                 <ul>
                     <li>Comparaison d'heures et de minutes.</li>
@@ -104,9 +109,11 @@
                     <li>Conversion des minutes en heures.</li>
                 </ul>
             </li>
-            <li><strong>Gestion de projet et respect des délais:</strong> nous avons appris à planifier nos tâches
+            <li>
+                <i class="fa-solid fa-list-check fa-lg"></i><strong> Gestion de projet et respect des délais:</strong> nous avons appris à planifier nos tâches
                 efficacement pour répondre aux échéances imposées.</li>
-            <li><strong>Utilisation de GIT et documentation:</strong> nous avons utilisé GIT pour versionner notre
+            <li>
+                <i class="fa-brands fa-git-alt fa-lg red-text"></i><strong> Utilisation de GIT et documentation:</strong> nous avons utilisé GIT pour versionner notre
                 projet
                 tout en rédigeant une documentation complète, indispensable pour maintenir la lisibilité du projet à
                 mesure
@@ -114,21 +121,25 @@
         </ol>
 
 
-        <h1 class="title space-top"><mark>Ça ressemblait à quoi?</mark></h1>
+        <h1 class="title space-top">Ça <span class="green-text">ressemblait</span> à quoi?</h1>
 
-        <p>Pour illustrer mon travail dans cette SAÉ, analysons deux exemples de code que j’ai développés. Ces exemples
-            montrent comment j’ai automatisé le traitement des données d’emploi du temps en extrayant des informations
-            spécifiques d’un fichier CSV.
-        </p>
+        <div class="intro">
+            <p class="left-section">Pour illustrer mon travail dans cette <strong>SAÉ</strong>, analysons <mark>deux exemples</mark> de code que j’ai développés. Ces exemples
+                montrent <mark>comment j’ai automatisé</mark> le traitement des données d’<strong>emploi du temps</strong> en extrayant des informations
+                spécifiques d’un fichier CSV.
+            </p>
+        </div>        
 
         <h2><code>recupere_champ_csv()</code></h2>
 
-        <p>Cette fonction a pour objectif de récupérer un champ spécifique d’un événement décrit au format CSV. Les
-            événements suivent une structure fixe sous forme de chaîne de caractères, par exemple :</p>
-
+        <div class="intro">
+            <p class="left-section">Cette fonction a pour objectif de récupérer un champ spécifique d’un événement décrit au format CSV. Les
+                événements suivent une structure fixe sous forme de chaîne de caractères, par exemple :</p>
+        </div>
+        
         <img class="block-code" src="data/img/code-01.webp">
 
-        <h3>Code:</h3>
+        <h3>Code <i class="fa-solid fa-code"></i></h3>
         <img class="block-code" src="data/img/code-02.webp">
 
         <h3>Détails de fonctionnement:</h3>
@@ -158,7 +169,10 @@
         </ol>
 
         <h2>Génération de tableaux Markdown</h2>
-        <p>Un autre exemple intéressant est la création d’un tableau au format Markdown à partir de données structurées.</p>
+        <div class="intro">
+            <p class="left-section">Un autre exemple intéressant est <mark>la création d’un tableau au format Markdown</mark> à partir de données structurées.</p>
+        </div>
+        
 
         <h3>Données d'entrée :</h3>
         <img class="block-code" src="data/img/code-03.webp">
@@ -185,9 +199,13 @@
             <li><strong>Ajout des données :</strong> Chaque ligne de données est formatée de manière similaire aux en-têtes. Les valeurs sont centrées dans les colonnes en respectant leur largeur.</li>
         </ol> 
 
-        <p>Ces deux fonctions montrent l’importance de la planification et de la décomposition des tâches complexes en sous-problèmes. Elles reflètent également la rigueur requise pour des projets professionnels, où l’automatisation et la clarté sont essentielles.</p>
-        <p>En conclusion, ces projets SAÉ nous ont permis de développer des compétences pratiques en programmation, gestion de projet et collaboration. Ils nous ont également préparés aux défis du monde professionnel en nous plongeant dans des situations réalistes et formatrices.</p>
+        <div class="intro">
+            <p class="left-section">Ces deux fonctions montrent l’importance de la <mark>planification et de la décomposition des tâches complexes en sous-problèmes</mark>. Elles reflètent également la <strong>rigueur</strong> requise pour des projets professionnels, où l’automatisation et la clarté sont essentielles.</p>
+        </div>    
 
+        <div>
+            <p class="left-section">En conclusion, ces projets SAÉ nous ont permis de développer des compétences pratiques en <strong>programmation</strong>, <strong>gestion de projet</strong> et <strong>collaboration</strong>. Ils nous ont également préparés aux défis du monde professionnel en nous plongeant dans des situations <strong>réalistes</strong> et <strong>formatrices</strong>.</p>
+        </div>
     </div>
     </div>
 
@@ -199,17 +217,18 @@
             <a class="btn-link" href="../../index.html">Accueil</a>
             <a class="btn-link" href="../../cv/a-propos.html">À propos</a>
             <a class="btn-link" href="../../projets/projets.html">Projets</a>
+            <a class="btn-link" href="../../cv/cv.html">CV</a>
             <a class="btn-link" href="../../galerie/galerie.html">Galerie</a>
         </div>
          <div class="footer-social-medias">
             <a href="https://github.com/araujojs" target="_blank">
-                <img class="social-media" alt="GitHub" src="../../data/img/github-icon.svg">
+                <i class="fa-brands fa-github-alt fa-xl social-media"></i>
             </a>
             <a href="https://www.linkedin.com/in/araujojose/" target="_blank">
-                <img class="social-media" alt="LinkedIn" src="../../data/img/linkedin-icon.svg">
+                <i class="fa-brands fa-linkedin-in fa-xl social-media"></i>
             </a>
             <a href="https://www.youtube.com/@joseAraujoDev" target="_blank">
-                <img class="social-media" alt="YouTube" src="../../data/img/youtube-icon.svg">
+                <i class="fa-brands fa-youtube fa-xl social-media"></i>
             </a>
         </div>
         <div class="footer-credits">
