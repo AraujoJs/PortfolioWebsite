@@ -1,5 +1,3 @@
-
-
 let lastScrollTop = 0;
 let scrollThreshold = 20;
 let scrollDownCount = 0;

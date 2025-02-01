@@ -1,12 +1,19 @@
+sub, sup {
+    position: relative;
+    font-size: .75em;
+    line-height: 1.1em;
+    vertical-align: baseline;
+}
 
 #my-photo {
-    margin:20 px;
+    width: 420px;
+    margin:20px;
     margin-top: 30px;
 
 }
 
 #my-photo-theatro {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 

@@ -1,5 +1,14 @@
 
+.project-image-container {
+    text-align: center;
+    width: 100%;
+}
 
+
+.project-image {
+    width: 150px;
+    margin: 20px;
+}
 
 .photo-large {
     margin-top: 50px;
@@ -63,7 +72,7 @@
 .right-section {
     width: 100%;
     padding-left: 20px;
-    text-align: start;
+    text-align: center;
 }
 
 
@@ -73,4 +82,5 @@
 
 .photo-left-margin-top {
     margin-top: 20px;
+    text-align: center;
 }
