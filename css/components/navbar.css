@@ -30,7 +30,7 @@
     background-color: #fff;
 }
 
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 1260px) {
     .nav-title {
         display: none;
     }
@@ -44,18 +44,18 @@
     }
 }
 
-@media screen and (max-width: 1145px) {
+@media screen and (max-width: 1160px) {
     .nav-title {
         display: none;
     }
     
     .btn {
-        font-size: 15px;
+        font-size: 13px;
         margin-left: 20px;
     }
 }
 
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 785px) {
     #navbar .buttons {
         width: 100%;
         text-align: center;

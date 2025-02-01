@@ -3,9 +3,9 @@
 }
 .btn {
     color: black;
-    font-size: 15px;
+    font-size: 12pt;
     text-decoration: none;
-    margin: 5px;
+    margin: 3px;
 }
 .btn:hover {
     color: #A4C639;
@@ -13,9 +13,8 @@
 
 .btn-selected {
     color: #A4C639;
-    font-size: 15px;
+    font-size: 12pt;
     text-decoration: none;
-    margin: 5px;
 }
 
 .btn-link {
@@ -74,4 +73,14 @@
     width: 14vw;    
     font-size: 1.3vw;
     border-radius: 10px;
+}
+
+
+@media screen and (max-width: 785px) {  
+    .btn {
+        font-size: 10pt;
+    }
+    .btn-selected {
+        font-size: 10pt;
+    }
 }
