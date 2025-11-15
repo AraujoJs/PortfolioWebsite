@@ -1,0 +1,27 @@
+name: Deploy Site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout codigo
+        uses: actions/checkout@v3
+
+
+      - name: Configurar chave SSH
+        uses: zebfactory/ssh-agent@v0.8.1
+        with:
+          ssh-private-key: ${{ secrets.DEPLOY_KEY }}
+
+      - name: Sincronizar arquivos com o servidor
+
+        run:  |
+          rsync -avz --delete \
+          --exclude=".git" \
+          ./ araujofj@ssh1.alwaysdata.net:/home/araujofj/www/
