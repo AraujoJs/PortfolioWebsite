@@ -72,6 +72,13 @@ ol>li {
     text-align: center;
 }
 
+.subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+
 .title-my-text {
     width: 65%;
     font-weight: 700;
@@ -119,6 +126,15 @@ ol>li {
     color: rgba(185, 185, 13, 0.604);
 }
 
+.poster-container {
+    width: 100%;
+    text-align: center;
+}
+
+.poster {
+    width: 40%;
+}
+
 @media screen and (max-width: 1145px) {
 
     .title mark{
@@ -160,4 +176,16 @@ ol>li {
     .title .margin-top-title {
         width: 100%;
     }
+}
+
+.blinking-cursor {
+      font-weight: bold;
+  font-size: 1em;
+  color: #222;
+  animation: blink 1s step-start infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
