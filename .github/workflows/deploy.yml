@@ -17,15 +17,20 @@ jobs:
       # Sincroniza arquivos com o servidor usando deploy key
       - name: Deploy via rsync
         run: |
-          # Cria arquivo temporário com a chave privada
           mkdir -p ~/.ssh
           echo "${{ secrets.DEPLOY_KEY }}" | tr -d '\r' > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-
-          # Rsync para o servidor, ignorando .git
-          rsync -avz --delete --exclude=".git" \
-            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -o IdentitiesOnly=yes" \
-            ./ araujofj@ssh-araujofj.alwaysdata.net:/home/araujofj/www/
-
-          # Remove o arquivo temporário da chave
-          rm ~/.ssh/deploy_key
+      
+          # Cria config temporária para forçar a chave
+          echo "Host ssh-araujofj.alwaysdata.net
+            HostName ssh-araujofj.alwaysdata.net
+            User araujofj
+            IdentityFile ~/.ssh/deploy_key
+            IdentitiesOnly yes
+            StrictHostKeyChecking no
+            UserKnownHostsFile=/dev/null" > ~/.ssh/config
+      
+          rsync -avz --delete --exclude=".git" ./ ssh-araujofj.alwaysdata.net:/home/araujofj/www/
+      
+          # Limpa a chave e config temporária
+          rm ~/.ssh/deploy_key ~/.ssh/config
