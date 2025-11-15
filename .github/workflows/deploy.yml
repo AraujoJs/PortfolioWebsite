@@ -15,7 +15,7 @@ jobs:
 
 
       - name: Configurar chave SSH
-        uses: zebfactory/ssh-agent@v0.8.1
+        uses: webfactory/ssh-agent@v0.9.1
         with:
           ssh-private-key: ${{ secrets.DEPLOY_KEY }}
 
