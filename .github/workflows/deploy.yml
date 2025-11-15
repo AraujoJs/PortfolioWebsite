@@ -22,7 +22,11 @@ jobs:
       - name: Sincronizar arquivos com o servidor
 
         run:  |
-          rsync -avz --delete \
-          --exclude=".git" \
-          -e "ssh -i ${{ secrets.DEPLOY_KEY }} -o StrictHostKeyChecking=no -o IdentitiesOnly=yes" \
-          ./ araujofj@ssh-araujofj.alwaysdata.net:/home/araujofj/www/
+          echo "${{ secrets.DEPLOY_KEY }}" > deploy_key
+          chmod 600 deploy_key
+        
+          rsync -avz --delete --exclude=".git" \
+            -e "ssh -i deploy_key -o StrictHostKeyChecking=no -o IdentitiesOnly=yes" \
+            ./ araujofj@ssh-araujofj.alwaysdata.net:/home/araujofj/www/
+
+          rm deploy_key
