@@ -10,19 +10,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Puxa o código do repositório
+       # Puxa o código do repositório
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Deploy via rsync usando a chave do secret
-      - name: Deploy via rsync
+      # Compacta o projeto excluindo .git
+      - name: Criar ZIP do projeto
         run: |
-          # Cria pasta .ssh e arquivo temporário da chave privada
+          zip -r site.zip . -x ".git/*"
+
+      # Envia o ZIP para o servidor e descompacta
+      - name: Enviar e descompactar no servidor
+        run: |
           mkdir -p $HOME/.ssh
           echo "${{ secrets.DEPLOY_KEY }}" | tr -d '\r' > $HOME/.ssh/deploy_key
           chmod 600 $HOME/.ssh/deploy_key
 
-          # Cria config SSH temporário para usar somente esta chave
+          # Cria config SSH temporário
           echo "Host alwaysdata
             HostName ssh-araujofj.alwaysdata.net
             User araujofj
@@ -31,8 +35,11 @@ jobs:
             StrictHostKeyChecking no
             UserKnownHostsFile=/dev/null" > $HOME/.ssh/config
 
-          # Sincroniza arquivos para o servidor, ignorando .git
-          rsync -avz --delete --exclude=".git" ./ alwaysdata:/home/araujofj/www/
+          # Envia o ZIP para o servidor
+          scp -i $HOME/.ssh/deploy_key site.zip alwaysdata:/home/araujofj/www/
 
-          # Remove arquivos temporários da chave e config
-          rm $HOME/.ssh/deploy_key $HOME/.ssh/config
+          # No servidor, descompacta o arquivo (sobrescreve arquivos existentes)
+          ssh -i $HOME/.ssh/deploy_key alwaysdata "cd /home/araujofj/www && unzip -o site.zip && rm site.zip"
+
+          # Remove arquivos temporários
+          rm $HOME/.ssh/deploy_key $HOME/.ssh/config site.zip
