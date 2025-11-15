@@ -14,19 +14,25 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Sincroniza arquivos com o servidor usando deploy key
+      # Deploy via rsync usando a chave do secret
       - name: Deploy via rsync
         run: |
-          # Cria arquivo temporário da chave
+          # Cria pasta .ssh e arquivo temporário da chave privada
           mkdir -p $HOME/.ssh
           echo "${{ secrets.DEPLOY_KEY }}" | tr -d '\r' > $HOME/.ssh/deploy_key
           chmod 600 $HOME/.ssh/deploy_key
-      
-          # Rsync com chave específica e ignorando outras do runner
-          rsync -avz --delete --exclude=".git" \
-            -e "ssh -i $HOME/.ssh/deploy_key -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
-            ./ araujofj@ssh-araujofj.alwaysdata.net:/home/araujofj/www/
-      
-          # Remove arquivo temporário da chave
-          rm $HOME/.ssh/deploy_key
 
+          # Cria config SSH temporário para usar somente esta chave
+          echo "Host alwaysdata
+            HostName ssh-araujofj.alwaysdata.net
+            User araujofj
+            IdentityFile $HOME/.ssh/deploy_key
+            IdentitiesOnly yes
+            StrictHostKeyChecking no
+            UserKnownHostsFile=/dev/null" > $HOME/.ssh/config
+
+          # Sincroniza arquivos para o servidor, ignorando .git
+          rsync -avz --delete --exclude=".git" ./ alwaysdata:/home/araujofj/www/
+
+          # Remove arquivos temporários da chave e config
+          rm $HOME/.ssh/deploy_key $HOME/.ssh/config
